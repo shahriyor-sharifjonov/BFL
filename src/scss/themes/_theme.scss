@@ -1,0 +1,69 @@
+// Тема по умолчанию
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Gilroy', sans-serif;
+    &:focus,
+    &:active{
+        outline: none;
+    }
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    background: #0C0C0D;
+    color: #D4D4D4;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    .main{
+        flex: 1 1 auto;
+    }
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.btn{
+    background: linear-gradient(265.36deg, #EEDC9F 0.67%, rgba(251, 241, 209, 0.04) 44.01%), linear-gradient(94.32deg, #FFEBA9 2.09%, #FDF7DC 42.14%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111.5%;
+    padding: 25px 70px;
+    position: relative;
+    color: #B18929;  
+    transition: 100ms ease-out; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    @include media(1600){
+        padding: 25px 50px;
+    }
+    &:active{
+        top: 5px;
+        &::before{
+            top: 0;
+        }
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(265.36deg, #EEDC9F 0.67%, rgba(251, 241, 209, 0.04) 44.01%), linear-gradient(94.32deg, #FFEBA9 2.09%, #FDF7DC 42.14%);
+        border-radius: 10px;
+        z-index: -1;
+        transition: 100ms ease-out;
+    } 
+}
