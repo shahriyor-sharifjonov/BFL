@@ -131,6 +131,10 @@
   line-height: 0;
 }
 
+.header__logo svg {
+  width: 100%;
+}
+
 .header__logo.sm {
   display: none;
 }
@@ -303,6 +307,18 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 32px 22px;
+}
+
+.header__menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, rgba(83, 83, 83, 0) 31.16%, #535353 100%);
 }
 
 .header__menu.open {
@@ -589,6 +605,18 @@ button {
 }
 
 @media (max-width: 576px) {
+  .header__logo {
+    width: 82px;
+  }
+
+  .header__tel-link {
+    font-size: 14px;
+  }
+
+  .header__tel-span {
+    font-size: 8px;
+  }
+
   .header__menu-title {
     font-size: 20px;
   }
