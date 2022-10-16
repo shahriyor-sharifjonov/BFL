@@ -605,6 +605,10 @@ button {
 }
 
 @media (max-width: 576px) {
+  .header__nav {
+    padding: 20px 15px;
+  }
+
   .header__logo {
     width: 82px;
   }

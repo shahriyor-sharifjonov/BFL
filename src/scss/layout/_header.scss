@@ -7,6 +7,9 @@
         @include media(1600){
             padding: 30px 15px;
         }
+        @include media(576){
+            padding: 20px 15px;
+        }
     }
     &__right{
         display: flex;
