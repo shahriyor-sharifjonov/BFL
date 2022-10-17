@@ -50,6 +50,14 @@ button{
     @include media(1600){
         padding: 25px 50px;
     }
+    &:hover{
+        &::after{
+            background: linear-gradient(265.36deg, #B39329 0.67%, rgba(203, 166, 47, 0.04) 44.01%), linear-gradient(94.32deg, #A58825 2.09%, #F9EEC1 42.14%);
+        }
+        &::before{
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(265.36deg, #B39329 0.67%, rgba(203, 166, 47, 0.04) 44.01%), linear-gradient(94.32deg, #A58825 2.09%, #F9EEC1 42.14%);
+        }
+    }
     &:active{
         top: 5px;
         &::before{
