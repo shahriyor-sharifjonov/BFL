@@ -844,6 +844,135 @@
   color: #C1C1C1;
 }
 
+.no-webp .solution {
+  background: url(../img/solution-img.png) bottom/contain no-repeat; }
+
+.solution {
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+.solution__title {
+  margin-bottom: 18px;
+}
+
+.solution__desc {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 111.5%;
+  text-align: center;
+  color: #ABABAB;
+  margin-bottom: 64px;
+}
+
+.solution__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-column-gap: 94px;
+     -moz-column-gap: 94px;
+          column-gap: 94px;
+  row-gap: 64px;
+  margin-bottom: 22px;
+}
+
+.solution__item {
+  width: calc(50% - 47px);
+  background: #171F25;
+  border-radius: 8px;
+  padding: 12px 40px 35px 40px;
+  min-height: 268px;
+  position: relative;
+  isolation: isolate;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 33px;
+     -moz-column-gap: 33px;
+          column-gap: 33px;
+}
+
+.solution__item::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #343434;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 8px;
+  z-index: -2;
+}
+
+.solution__item::after {
+  content: "";
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, right top, from(#171F25), color-stop(100%, rgba(23, 31, 37, 0)), to(rgba(217, 217, 217, 0)));
+  background: -o-linear-gradient(left, #171F25 0%, rgba(23, 31, 37, 0) 100%, rgba(217, 217, 217, 0) 100%);
+  background: linear-gradient(90deg, #171F25 0%, rgba(23, 31, 37, 0) 100%, rgba(217, 217, 217, 0) 100%);
+}
+
+.solution__num {
+  font-family: Girassol;
+  font-size: 80px;
+  line-height: 100%;
+  position: relative;
+  padding-top: 14px;
+}
+
+.no-webp .solution__num::before {
+  background: url(../img/solution-line.png) center/cover no-repeat; }
+
+.solution__num::before {
+  content: "";
+  position: absolute;
+  width: 86px;
+  height: 14px;
+  top: 0;
+  width: 100%;
+}
+
+.solution__texts {
+  padding-top: 54px;
+}
+
+.solution__subtitle {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 100%;
+  margin-bottom: 25px;
+}
+
+.solution__p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #DDDDDD;
+}
+
+.solution__txt {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #9A9A9A;
+  max-width: 444px;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -961,7 +1090,7 @@ button {
   font-family: PalatinoLinotype;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 48px;
   line-height: 107.1%;
   text-align: center;
   background: -o-linear-gradient(342.09deg, #DDDDDD 18.86%, rgba(174, 174, 174, 0.63) 85.5%);
@@ -1175,6 +1304,46 @@ button {
     width: 100%;
   }
 
+  .solution {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .solution__content {
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  .solution__item {
+    width: calc(50% - 20px);
+    padding: 12px 25px 25px 25px;
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
+
+  .solution__num {
+    font-size: 50px;
+  }
+
+  .solution__texts {
+    padding-top: 16px;
+  }
+
+  .solution__subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .solution__txt {
+    font-size: 16px;
+  }
+
   .title {
     font-size: 42px;
   }
@@ -1266,6 +1435,10 @@ button {
     max-width: 400px;
   }
 
+  .solution__desc {
+    font-size: 24px;
+  }
+
   .title {
     font-size: 34px;
   }
@@ -1307,6 +1480,27 @@ button {
 
   .reason__item {
     width: calc(50% - 6px);
+  }
+
+  .solution__desc {
+    font-size: 18px;
+    line-height: 111.5%;
+  }
+
+  .solution__content {
+    row-gap: 22px;
+  }
+
+  .solution__item {
+    width: 100%;
+    min-height: 138px;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+  }
+
+  .solution__texts {
+    padding-top: 30px;
   }
 
   .title {
@@ -1369,6 +1563,75 @@ button {
 
   .reason__img img {
     max-width: 300px;
+  }
+
+  .solution {
+    background: none !important;
+    position: relative;
+    isolation: isolate;
+  }
+
+  .no-webp .solution::before {
+    background: url(../img/solution-before.png) center/cover no-repeat; }
+
+  .solution::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .solution__desc {
+    font-size: 15px;
+    line-height: 111.5%;
+    margin-bottom: 40px;
+    max-width: 275px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .solution__content {
+    margin-bottom: 17px;
+  }
+
+  .solution__item::before {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+  }
+
+  .solution__num {
+    font-size: 40px;
+    line-height: 48px;
+    padding-top: 7px;
+  }
+
+  .solution__num::before {
+    height: 7px;
+  }
+
+  .solution__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 6px;
+  }
+
+  .solution__p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .solution__txt {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 315px;
+    width: 100%;
   }
 }
 
@@ -1502,6 +1765,15 @@ button {
 .webp .intro::before { background-image: url(../img/intro.webp); }
 
 .webp .intro__content::after { background-image: url(../img/light.webp); }
+
+.webp .solution { background: url(../img/solution-img.webp) bottom/contain no-repeat; }
+
+.webp .solution__num::before { background: url(../img/solution-line.webp) center/cover no-repeat; }
+
+@media (max-width: 768px) {
+
+  .webp .solution::before { background: url(../img/solution-before.webp) center/cover no-repeat; }
+}
 
 @media (max-width: 576px) {
 
