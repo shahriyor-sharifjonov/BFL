@@ -1,4 +1,19 @@
 .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    z-index: 50;
+    @include media(1600){
+        height: 130px;
+    }
+    @include media(1400){
+        height: 115px;
+    }
+    @include media(576){
+        height: 84px;
+    }
     &__nav{
         padding: 40px 15px;
         display: flex;
