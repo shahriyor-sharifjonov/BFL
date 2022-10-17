@@ -1049,6 +1049,10 @@ button {
     padding: 14px 10px;
   }
 
+  .adv {
+    padding-bottom: 100px;
+  }
+
   .adv__item-img {
     min-width: 80px;
     width: 80px;

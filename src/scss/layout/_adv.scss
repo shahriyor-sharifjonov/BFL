@@ -1,5 +1,8 @@
 .adv{
     padding-bottom: 120px;
+    @include media(576){
+        padding-bottom: 100px;
+    }
     &__body{
         display: flex;
         gap: 13px;
