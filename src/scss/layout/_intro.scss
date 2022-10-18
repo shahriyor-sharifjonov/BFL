@@ -111,9 +111,10 @@
             border: 1px solid;
             z-index: -2;
             border-image-slice: 1;
-            border-image-source: linear-gradient(180deg, rgba(83, 83, 83, 0) 31.16%, #535353 100%);            
+            border-image-source: linear-gradient(180deg, rgba(83, 83, 83, 0) 31.16%, #535353 100%);   
+            pointer-events: none;         
             @include media(576){
-                top: -10%
+                top: -10%;
             }
         }
         &::after{
