@@ -415,7 +415,7 @@
 
 .intro {
   padding-top: 237px;
-  padding-bottom: 177px;
+  padding-bottom: 150px;
   position: relative;
 }
 
@@ -753,7 +753,7 @@
 }
 
 .adv {
-  padding-bottom: 120px;
+  padding-bottom: 150px;
 }
 
 .adv__body {
@@ -849,8 +849,8 @@
   background: url(../img/solution-img.png) bottom/contain no-repeat; }
 
 .solution {
-  padding-top: 115px;
-  padding-bottom: 115px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .solution__title {
@@ -975,7 +975,7 @@
 }
 
 .info {
-  padding: 180px 0 130px 0;
+  padding: 150px 0 150px 0;
   position: relative;
 }
 
@@ -1466,7 +1466,7 @@
 }
 
 .form {
-  padding-bottom: 120px;
+  padding-bottom: 150px;
 }
 
 .form__title {
@@ -2515,7 +2515,7 @@ button {
 
   .intro {
     padding-top: 147px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 
   .no-webp .intro::before {

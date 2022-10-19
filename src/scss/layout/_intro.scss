@@ -1,6 +1,6 @@
 .intro{
     padding-top: 77px + 160px;
-    padding-bottom: 177px;
+    padding-bottom: 150px;
     position: relative;
     @include media(1600){
         padding-top: 63px + 130px;
@@ -11,7 +11,7 @@
     }
     @include media(576){
         padding-top: 63px + 84px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
     &::before{
         content: '';
