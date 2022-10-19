@@ -2323,6 +2323,7 @@ button {
     right: auto;
     left: -100px;
     bottom: 50px;
+    top: auto;
   }
 }
 
