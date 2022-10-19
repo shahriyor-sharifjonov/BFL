@@ -2,6 +2,9 @@
     padding-top: 150px;
     padding-bottom: 150px;
     position: relative;
+    @include media(576){
+        padding-bottom: 100px;
+    }
     &::before{
         content: '';
         position: absolute;

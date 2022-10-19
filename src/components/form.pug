@@ -1,0 +1,19 @@
+mixin form()
+    .form
+        .form__body.container 
+            h2.title.form__title Запишитесь на подробный Бизнес-Анализ работы Вашей Компании
+            p.form__p Сделайте первый шаг - оставьте Свои данные, мы обязательно свяжемся и поможем найти лучшее  для Вас решение.
+            form(action="#").form__content
+                .form__left
+                    .form__input
+                        input(type="text" placeholder="Ваше ФИО")
+                    .form__input
+                        input(type="text" placeholder="Номер телефона")
+                    .form__input
+                        input(type="text" placeholder="Город")
+                    .form__input
+                        input(type="text" placeholder="Компания")
+                .form__right
+                    button(type="submit").btn.form__btn 
+                        span ЗАПИСАТЬСЯ НА БИЗНЕС - АНАЛИЗ
+                    p.form__label Ваши данные в сохранности и не будут переданы третьим лицам. Отправляя заявку вы соглашаетесь на обработку персональных данных

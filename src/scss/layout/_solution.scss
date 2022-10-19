@@ -4,7 +4,7 @@
     background: url(../img/solution-img.png)bottom / contain no-repeat;
     @include media(1400){
         padding-top: 100px;
-        padding-bottom: 80px;
+        padding-bottom: 100px;
     }
     @include media(768){
         background: none !important;
