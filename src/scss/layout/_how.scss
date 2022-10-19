@@ -269,6 +269,7 @@
         margin-right: auto;
         @include media(576){
             max-width: 270px;
+            height: 50px;
         }
     }
 }
