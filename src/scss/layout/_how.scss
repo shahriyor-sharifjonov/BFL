@@ -108,12 +108,15 @@
     }
     &__content{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 150px;
         margin-bottom: 75px;
         gap: 40px;
         @include media(992){
             flex-direction: column;
+            align-items: center;
             gap: 30px;
+            margin-bottom: 40px;
         }
     }
     &__img{
@@ -159,6 +162,7 @@
         align-items: flex-start;
         width: 50%;
         gap: 75px;
+        max-width: 558px;
         @include media(992){
             width: 100%;
             gap: 30px;

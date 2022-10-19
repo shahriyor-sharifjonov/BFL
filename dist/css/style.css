@@ -1199,9 +1199,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 150px;
   margin-bottom: 75px;
   gap: 40px;
 }
@@ -1250,6 +1251,7 @@
           align-items: flex-start;
   width: 50%;
   gap: 75px;
+  max-width: 558px;
 }
 
 .how__item {
@@ -2261,7 +2263,11 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 30px;
+    margin-bottom: 40px;
   }
 
   .how__img {
