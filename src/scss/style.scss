@@ -13,6 +13,11 @@
 // vendors
 // @import 'vendors/bootstrap'
 
+// themes
+@import 
+    'themes/theme',
+    'themes/admin';
+    
 // base
 @import 
     'base/reset',
@@ -33,6 +38,7 @@
     'layout/how',
     'layout/poss',
     'layout/form',
+    'layout/acq',
     'layout/forms';
 
 // components
@@ -45,8 +51,3 @@
 // pages
 @import 
     'pages/home';
-
-// themes
-@import 
-    'themes/theme',
-    'themes/admin';

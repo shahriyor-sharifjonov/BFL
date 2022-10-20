@@ -1,0 +1,23 @@
+.acq{
+    padding-top: 77px + 160px;
+    padding-bottom: 200px;
+    position: relative;
+    @include media(1600){
+        padding-top: 63px + 130px;
+    }
+    @include media(1400){
+        padding-top: 63px + 115px;
+    }
+    @include media(576){
+        padding-top: 63px + 84px;
+        padding-bottom: 50px;
+    }
+    &__title{
+        text-align: left;
+        margin-bottom: 80px;
+        @include media(768){
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    }
+}
