@@ -14,10 +14,14 @@
     }
     &__title{
         text-align: left;
-        margin-bottom: 80px;
+        margin-bottom: 80px;    
+        width: max-content;
         @include media(768){
             margin-bottom: 50px;
             text-align: center;
         }
+    }
+    &__item{
+        
     }
 }
