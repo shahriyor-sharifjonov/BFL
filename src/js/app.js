@@ -15,3 +15,28 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {
     menu.classList.remove('open')
 })
+
+const contents = document.querySelectorAll('.services__content');
+
+
+contents.forEach(el => {
+    const itemP = el.querySelectorAll('.services__item-p');
+    const openText = el.querySelectorAll('.open-text');
+    openText.forEach(txt=>{
+        txt.addEventListener('click', (e)=>{
+            itemP.forEach(p=>{
+                let txtOpen = false;
+                p.classList.toggle('active')
+                if(p.classList.contains('active')){
+                    openText.forEach(q => {
+                        q.innerHTML = 'Меньше'
+                    })
+                }else {
+                    openText.forEach(q => {
+                        q.innerHTML = 'Подробнее'
+                    })
+                }
+            })
+        })
+    })
+})
