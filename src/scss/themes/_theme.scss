@@ -28,6 +28,15 @@ body{
         flex: 1 1 auto;
     }
 }
+.about{
+    background-image: url('../img/about-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    @include media(576){
+        background-image: url('../img/about-bg-sm.png');
+        background-size: 100% auto;
+    }
+}
 button{
     background: none;
     border: none;
