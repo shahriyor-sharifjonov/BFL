@@ -17,6 +17,12 @@ body{
 body{
     background: #0C0C0D;
     color: #D4D4D4;
+    &.services__body{
+        background-image: url('../img/services-bg.png');
+        background-color: #0C0C0D;
+        background-repeat: no-repeat; 
+        background-position: top center;
+    }
 }
 .wrapper{
     min-height: 100%;
