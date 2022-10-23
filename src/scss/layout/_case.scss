@@ -1,0 +1,128 @@
+.case{
+    padding-top: 77px + 160px;
+    padding-bottom: 100px;
+    position: relative;
+    @include media(1600){
+        padding-top: 63px + 130px;
+    }
+    @include media(1400){
+        padding-top: 63px + 115px;
+    }
+    @include media(576){
+        padding-top: 63px + 84px;
+    }
+    &__el-1{
+        display: none;
+        @include media(576){
+            background: rgba(45, 89, 207, 0.76);
+            opacity: 0.6;
+            filter: blur(100px);
+            transform: rotate(165deg);
+            pointer-events: none;
+            z-index: -1;
+            position: absolute;
+            top: 60px;
+            right: -70px;
+            width: 130px;
+            height: 180px;
+            display: block;
+        }
+    }
+    &__el-2{
+        display: none;
+        @include media(576){
+            display: block;
+            position: absolute;
+            bottom: -140px;
+            left: -140px;
+            width: 200px;
+            height: 280px;
+            background: rgba(45, 89, 207, 0.76);
+            opacity: 0.6;
+            filter: blur(100px);
+            transform: rotate(165deg);
+            pointer-events: none;
+            z-index: -1;
+        }
+    }
+    &__blow{
+        position: absolute;
+        pointer-events: none;
+        z-index: -1;
+        top: -30px;
+        left: -70px;
+        width: 850px;
+        height: 436px;
+        display: none;
+        background-image: url('../img/blow.png');
+        background-repeat: no-repeat;
+        @include media(576){
+            display: block;
+        }
+    }
+    &__content{
+        background: linear-gradient(174.78deg, #0C0C0D -10.24%, #182027 94.38%);
+        padding: 70px 40px;
+        gap: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        @include media(1200){
+            flex-direction: column-reverse;
+            padding: 30px 35px 70px 35px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            border: 1px solid;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(180deg, rgba(83, 83, 83, 0) 31.16%, #535353 100%);
+            pointer-events: none;
+            top: 0;
+            right: 16px;
+            bottom: 16px;        
+            left: 16px;
+        }
+    }
+    &__p{
+        width: 50%;
+        font-family: 'Palatino Linotype';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 107.1%;
+        background: linear-gradient(104.22deg, #FAFAFA 22.12%, rgba(185, 185, 185, 0.81) 101.33%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        @include media(1400){
+            font-size: 20px;
+        }
+        @include media(1200){
+            width: 100%;
+        }
+        @include media(576){
+            font-size: 16px;
+            line-height: 107.1%;
+        }
+    }
+    &__img{
+        border-radius: 18px;
+        width: 50%;
+        overflow: hidden;
+        line-height: 0;
+        @include media(1200){
+            width: 100%;
+        }
+        @include media(768){
+            margin-left: -10px;
+            margin-right: -10px;
+            width: calc(100% + 20px);
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
