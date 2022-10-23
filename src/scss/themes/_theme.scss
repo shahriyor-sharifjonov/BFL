@@ -43,6 +43,15 @@ body{
         background-size: 100% auto;
     }
 }
+.ask-bg{
+    background-image: url('../img/ask-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    @include media(576){
+        background-image: url('../img/ask-bg-sm.png');
+        background-size: 100% auto;
+    }
+}
 .cases{
     background-image: url('../img/cases-bg.png');
     background-repeat: no-repeat;
