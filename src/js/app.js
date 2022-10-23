@@ -40,3 +40,27 @@ contents.forEach(el => {
         })
     })
 })
+
+const popupClose = document.querySelectorAll('.popup-close');
+const popupOpen = document.querySelectorAll('.open-popup');
+
+popupClose.forEach(close => {
+    close.addEventListener('click', () => {
+        const popups = document.querySelectorAll('.popup');
+        popups.forEach(popup => {
+            popup.classList.remove('active')
+        })
+    })
+})
+
+popupOpen.forEach(open => {
+    open.addEventListener('click', () => {
+        const target = open.getAttribute('data-target');
+        const popup = document.querySelector(target);
+        const popups = document.querySelectorAll('.popup');
+        popups.forEach(popup => {
+            popup.classList.remove('active')
+        })
+        popup.classList.add('active')
+    })
+})

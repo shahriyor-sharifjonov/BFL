@@ -1,4 +1,21 @@
 mixin footer()
+    .popup#backcall 
+        .popup-close.popup__overlay
+        .popup__body 
+            .popup__inner   
+                p.popup__title Оставьте свои контактные данные, мы перезвоним вам в ближайшее время и проведем консультацию
+                form(action="#").popup__form
+                    .popup__form-content
+                        .form__input
+                            input(type="text" placeholder="Ваше ФИО").popup__input
+                        .form__input
+                            input(type="text" placeholder="Номер телефона").popup__input
+                        .form__input
+                            input(type="text" placeholder="Город").popup__input
+                        .form__input
+                            input(type="text" placeholder="Компания").popup__input
+                    button(type="submit").btn.popup__btn Оставить заявку
+                    p.popup__label Ваши данные в сохранности и не будут переданы третьим лицам. Отправляя заявку вы соглашаетесь на обработку персональных данных
     footer.footer   
         .footer__nav.container
             .footer__left 
@@ -20,7 +37,7 @@ mixin footer()
                         a(href="cases.html").footer__link Кейсы
                     li.footer__li   
                         a(href="ask.html").footer__link Спрашивали? - отвечаем!
-                button(type='button' data-target="backcall").open-popup.btn.footer__btn Обратный звонок
+                button(type='button' data-target="#backcall").open-popup.btn.footer__btn Обратный звонок
                 .footer__tel 
                     a(href="tel:89299058448").footer__tel-link 8 (929) 905-84-48 
                     a(href="tel:84956635646").footer__tel-link 8 (495) 663-56-46 

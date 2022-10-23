@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=20221023164242"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20221023171107"/>
     <title>Document </title>
   </head>
   <body class="services__body"> 
@@ -37,7 +37,7 @@
                     <li class="header__li">  <a class="header__link" href="cases.html">Кейсы</a></li>
                     <li class="header__li">  <a class="header__link" href="ask.html">Спрашивали? - отвечаем!</a></li>
                   </ul>
-                  <button class="open-popup btn header__btn" type="button" data-target="backcall">Обратный звонок</button>
+                  <button class="open-popup btn header__btn" type="button" data-target="#backcall">Обратный звонок</button>
                   <div class="header__tel"> <a class="header__tel-link" href="tel:89299058448">8 (929) 905-84-48 </a><a class="header__tel-link" href="tel:84956635646">8 (495) 663-56-46 </a>
                     <div class="header__tel-span">Сейчас работаем - звоните </div>
                   </div>
@@ -2037,6 +2037,32 @@
                   </div>
                 </div>
       </main>
+            <div class="popup" id="backcall"> 
+              <div class="popup-close popup__overlay"></div>
+              <div class="popup__body"> 
+                <div class="popup__inner">  
+                  <p class="popup__title">Оставьте свои контактные данные, мы перезвоним вам в ближайшее время и проведем консультацию</p>
+                  <form class="popup__form" action="#">
+                    <div class="popup__form-content">
+                      <div class="form__input">
+                        <input class="popup__input" type="text" placeholder="Ваше ФИО"/>
+                      </div>
+                      <div class="form__input">
+                        <input class="popup__input" type="text" placeholder="Номер телефона"/>
+                      </div>
+                      <div class="form__input">
+                        <input class="popup__input" type="text" placeholder="Город"/>
+                      </div>
+                      <div class="form__input">
+                        <input class="popup__input" type="text" placeholder="Компания"/>
+                      </div>
+                    </div>
+                    <button class="btn popup__btn" type="submit">Оставить заявку</button>
+                    <p class="popup__label">Ваши данные в сохранности и не будут переданы третьим лицам. Отправляя заявку вы соглашаетесь на обработку персональных данных</p>
+                  </form>
+                </div>
+              </div>
+            </div>
             <footer class="footer">  
               <div class="footer__nav container">
                 <div class="footer__left"> <a class="footer__logo" href="index.html">
@@ -2053,7 +2079,7 @@
                     <li class="footer__li">  <a class="footer__link" href="cases.html">Кейсы</a></li>
                     <li class="footer__li">  <a class="footer__link" href="ask.html">Спрашивали? - отвечаем!</a></li>
                   </ul>
-                  <button class="open-popup btn footer__btn" type="button" data-target="backcall">Обратный звонок</button>
+                  <button class="open-popup btn footer__btn" type="button" data-target="#backcall">Обратный звонок</button>
                   <div class="footer__tel"> <a class="footer__tel-link" href="tel:89299058448">8 (929) 905-84-48 </a><a class="footer__tel-link" href="tel:84956635646">8 (495) 663-56-46 </a>
                     <div class="footer__tel-span">Сейчас работаем - звоните </div>
                   </div>
@@ -2061,6 +2087,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20221023164242"> </script>
+    <script src="js/app.min.js?_v=20221023171107"> </script>
   </body>
 </html>
