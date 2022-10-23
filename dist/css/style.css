@@ -2922,6 +2922,12 @@ button {
   }
 }
 
+@media (max-width: 1400px) {
+  .intro__title {
+    font-size: 59px;
+  }
+}
+
 @media (max-width: 1350px) {
   .title {
     font-size: 42px;

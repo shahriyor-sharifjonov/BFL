@@ -61,6 +61,9 @@
         background-clip: text;
         text-fill-color: transparent;
         text-shadow: 6px 6px 51px rgba(0, 0, 0, 0.3);
+        @include media(1400){
+            font-size: 59px;
+        }
         @include media(1350){
             font-size: 50px;
             line-height: 140%;
