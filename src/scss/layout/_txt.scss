@@ -1,6 +1,6 @@
 .txt{
     padding-bottom: 123px;
-    @include media(576){
+    @include media($sm){
         padding-bottom: 107px;
     }
     &__title{
@@ -13,10 +13,10 @@
         background: linear-gradient(173.97deg, #0C0C0D -6.64%, #182027 93.83%);
         padding: 70px 50px;
         position: relative;
-        @include media(992){
+        @include media($lg){
             padding: 50px;
         }
-        @include media(576){
+        @include media($sm){
             padding: 5px 30px 40px 30px;
         }
         &::before{
@@ -30,7 +30,7 @@
             border: 1px solid;
             border-image-slice: 1;
             border-image-source: linear-gradient(180deg, rgba(83, 83, 83, 0) 31.16%, #535353 100%);
-            @include media(992){
+            @include media($lg){
                 top: 10px;
                 right: 10px;
                 bottom: 10px;
@@ -45,11 +45,11 @@
         line-height: 33px;
         text-align: center;
         color: #DDDDDD;
-        @include media(1350){
+        @include media($xxl){
             font-size: 20px;
             line-height: 140%;
         }
-        @include media(576){
+        @include media($sm){
             font-size: 14px;
             line-height: 17px;
         }

@@ -1,7 +1,7 @@
 .how{
     padding-bottom: 250px;
     position: relative;
-    @include media(576){
+    @include media($sm){
         padding-bottom: 100px;
     }
     &:not(.cases-wrap)::before{
@@ -15,7 +15,7 @@
         background-image: url('../img/how-bg.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        @include media(576){
+        @include media($sm){
             background-image: url('../img/how-bg-2.png');
             width: 760px;
             height: 364px;
@@ -26,7 +26,7 @@
     &:not(.cases-wrap)::after{
         content: '';
         z-index: -1;
-        @include media(576){
+        @include media($sm){
             position: absolute;
             bottom: 1206px;
             left: -264px;
@@ -49,7 +49,7 @@
             filter: blur(100px);
             transform: rotate(-154.51deg);
             z-index: -1;
-            @include media(576){
+            @include media($sm){
                 top: -50px;
                 left: -133px;
                 width: 205px;
@@ -67,7 +67,7 @@
             filter: blur(100px);
             transform: rotate(-154.51deg);
             z-index: -1;
-            @include media(576){
+            @include media($sm){
                 bottom: 50%;
                 transform: translate(50%);
                 right: -57px;
@@ -78,7 +78,7 @@
         &_3{
             display: none;
             z-index: -1;
-            @include media(576){
+            @include media($sm){
                 position: absolute;
                 display: block;
                 bottom: 37px;
@@ -100,7 +100,7 @@
         line-height: 111.5%;
         color: #ABABAB;    
         margin-bottom: 80px;
-        @include media(1200){
+        @include media($xl){
             &.light{
                 font-size: 15px;
             }
@@ -115,7 +115,7 @@
         gap: 150px;
         margin-bottom: 75px;
         gap: 40px;
-        @include media(992){
+        @include media($lg){
             flex-direction: column;
             align-items: center;
             gap: 30px;
@@ -124,7 +124,7 @@
     }
     &__img{
         position: relative;
-        @include media(992){
+        @include media($lg){
             max-width: 80%;
             margin-left: auto;
             margin-right: auto;
@@ -140,17 +140,17 @@
             background: rgba(100, 100, 100, 0.3);
             filter: blur(100px);
             z-index: -1;
-            @include media(576){
+            @include media($sm){
                 width: 400px;
                 height: 200px;
             }
         }
-        @include media(992){
+        @include media($lg){
             display: none;
         }
         &.lg{
             display: none;
-            @include media(992){
+            @include media($lg){
                 display: block;
             }
         }
@@ -166,7 +166,7 @@
         width: 50%;
         gap: 75px;
         max-width: 558px;
-        @include media(992){
+        @include media($lg){
             width: 100%;
             gap: 30px;
             align-items: center;
@@ -175,7 +175,7 @@
     &__item{
         max-width: 495px;
         width: 100%;
-        @include media(992){
+        @include media($lg){
             max-width: 558px;
         }
         &.big{
@@ -192,7 +192,7 @@
             isolation: isolate;
             overflow: hidden;
             margin-bottom: 36px;
-            @include media(1350){
+            @include media($xxl){
                 margin-bottom: 24px;
             }
             &::before{
@@ -224,10 +224,10 @@
             font-size: 25px;
             line-height: 31px;
             color: #D1D1D1;  
-            @include media(1350){
+            @include media($xxl){
                 font-size: 20px;
             }          
-            @include media(576){
+            @include media($sm){
                 font-size: 15px;
                 line-height: 18px;
             }
@@ -247,7 +247,7 @@
             min-width: 77px;
             height: 77px;
             border-radius: 50%;   
-            @include media(576){
+            @include media($sm){
                 width: 48px;
                 height: 48px;
                 min-width: 48px;
@@ -263,10 +263,10 @@
             span{
                 color: #fff;
             }
-            @include media(1350){
+            @include media($xxl){
                 font-size: 20px;
             }       
-            @include media(576){
+            @include media($sm){
                 font-size: 16px;
                 line-height: 19px;
             }          
@@ -283,7 +283,7 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        @include media(576){
+        @include media($sm){
             max-width: 270px;
             height: 50px;
         }

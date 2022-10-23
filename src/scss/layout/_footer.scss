@@ -4,8 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include media(576){
+    @include media($sm){
         height: 164px;
+    }
+    @include media(430){
+        zoom: 0.85;
     }
     &__nav{
         padding: 0 15px;
@@ -20,7 +23,7 @@
     }
     &__logo{
         line-height: 0;
-        @include media(576){
+        @include media($sm){
             width: 82px;
         }
         svg{
@@ -42,14 +45,17 @@
         @include media(1600){
             gap: 40px;
         }
-        @include media(992){
+        @include media($lg){
             flex-direction: column;
             align-items: flex-start;
             gap: 9px;   
             max-width: 120px;
             height: max-content;
         }
-        @include media(490){
+        @include media(576){
+            gap: 6px;
+        }
+        @include media(340){
             margin-left: 0;
             margin-right: 20px;
         }
@@ -62,6 +68,9 @@
         color: #D4D4D4;        
         transition: 300ms ease-out;
         position: relative;
+        @include media(576){
+            font-size: 12px;
+        }
         &:hover{
             opacity: 0.8;
             &::before{
@@ -87,7 +96,7 @@
     &__btn{
         height: 70px;
         margin-right: 48px;
-        @include media(1350){
+        @include media($xxl){
             display: none;
         }
     }
@@ -95,7 +104,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        @include media(1350){
+        @include media($xxl){
             gap: 16px;
         }
     }
@@ -104,11 +113,8 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-end;
-        @include media(576){
+        @include media($sm){
             margin-left: -40px;
-        }
-        @include media(360){
-            display: none;
         }
         &-link{
             font-weight: 700;
@@ -121,10 +127,10 @@
             @include media(1600){
                 font-size: 24px; 
             }
-            @include media(1350){
+            @include media($xxl){
                 font-size: 20px;
             }
-            @include media(576){
+            @include media($sm){
                 font-size: 14px;
             }
             &:hover{
@@ -142,10 +148,10 @@
                 font-size: 14px;
                 padding-left: 18px;
             }
-            @include media(1350){
+            @include media($xxl){
                 font-size: 11px;
             }
-            @include media(576){
+            @include media($sm){
                 font-size: 8px;
             }
             &::before{

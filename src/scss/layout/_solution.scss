@@ -2,11 +2,11 @@
     padding-top: 150px;
     padding-bottom: 150px;
     background: url(../img/solution-img.png)bottom / contain no-repeat;
-    @include media(1350){
+    @include media($xxl){
         padding-top: 100px;
         padding-bottom: 100px;
     }
-    @include media(768){
+    @include media($md){
         background: none !important;
         position: relative;
         isolation: isolate;
@@ -30,14 +30,14 @@
         text-align: center;
         color: #ABABAB;
         margin-bottom: 64px;
-        @include media(1200){
+        @include media($xl){
             font-size: 24px;
         }
-        @include media(992){
+        @include media($lg){
             font-size: 18px;
             line-height: 111.5%;
         }
-        @include media(768){
+        @include media($md){
             font-size: 15px;
             line-height: 111.5%;
             margin-bottom: 40px;
@@ -55,14 +55,14 @@
         column-gap: 94px;
         row-gap: 64px;
         margin-bottom: 22px;
-        @include media(1350){
+        @include media($xxl){
             column-gap: 40px;
             row-gap: 40px;
         }
-        @include media(992){
+        @include media($lg){
             row-gap: 22px;
         }
-        @include media(768){
+        @include media($md){
             margin-bottom: 17px;
         }
     }
@@ -76,13 +76,13 @@
         isolation: isolate;
         display: flex;
         column-gap: 33px;
-        @include media(1350){
+        @include media($xxl){
             width: calc(50% - 20px);
             padding: 12px 25px 25px 25px;
             column-gap: 15px;
             min-height: max-content;
         }
-        @include media(992){
+        @include media($lg){
             width: 100%;
             min-height: 138px;
             column-gap: 8px;
@@ -97,7 +97,7 @@
             bottom: 10px;
             border-radius: 8px;
             z-index: -2;
-            @include media(768){
+            @include media($md){
                 top: 8px;
                 left: 8px;
                 right: 8px;
@@ -122,10 +122,10 @@
         line-height: 100%;
         position: relative;
         padding-top: 14px;
-        @include media(1350){
+        @include media($xxl){
             font-size: 50px;
         }
-        @include media(768){
+        @include media($md){
             font-size: 40px;
             line-height: 48px;
             padding-top: 7px;
@@ -138,17 +138,17 @@
             height: 14px;
             top: 0;
             width: 100%;
-            @include media(768){
+            @include media($md){
                 height: 7px;
             }
         }
     }
     &__texts{
         padding-top: 54px;
-        @include media(1350){
+        @include media($xxl){
             padding-top: 16px;
         }
-        @include media(992){
+        @include media($lg){
             padding-top: 30px;
         }
     }
@@ -157,11 +157,11 @@
         font-size: 27px;
         line-height: 100%;
         margin-bottom: 25px;
-        @include media(1350){
+        @include media($xxl){
             font-size: 20px;
             margin-bottom: 10px;
         }
-        @include media(768){
+        @include media($md){
             font-weight: 600;
             font-size: 16px;
             line-height: 18px;
@@ -173,7 +173,7 @@
         font-size: 18px;
         line-height: 22px;
         color: #DDDDDD;
-        @include media(768){
+        @include media($md){
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
@@ -186,10 +186,10 @@
         color: #9A9A9A;
         max-width: 444px;
         width: 100%;
-        @include media(1350){
+        @include media($xxl){
             font-size: 16px;
         }
-        @include media(768){
+        @include media($md){
             font-size: 16px;
             line-height: 19px;
             max-width: 315px;

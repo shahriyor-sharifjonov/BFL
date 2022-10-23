@@ -5,11 +5,11 @@
     @include media(1600){
         padding-top: 63px + 130px;
     }
-    @include media(1350){
+    @include media($xxl){
         padding-top: 63px + 115px;
         padding-bottom: 80px;
     }
-    @include media(576){
+    @include media($sm){
         padding-top: 63px + 84px;
         padding-bottom: 70px;
     }
@@ -31,7 +31,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
-        @include media(1200){
+        @include media($xl){
             font-size: 15px;
             line-height: 111.5%;
             margin-bottom: 50px;
@@ -51,7 +51,7 @@
             width: 120px;
             height: 120px;
             min-width: 120px;
-            @include media(992){
+            @include media($lg){
                 position: absolute;
                 width: 65px;
                 height: 65px;
@@ -59,7 +59,7 @@
                 margin-top: -10px;
                 margin-left: -25px;
             }
-            @include media(576){
+            @include media($sm){
                 margin-left: -18px;
             }
             &::before{
@@ -74,7 +74,7 @@
                 filter: blur(25px);
                 transform: rotate(165deg) translate(50%, 50%);
             }
-            @include media(1350){
+            @include media($xxl){
                 width: 100px;
                 height: 100px;
                 min-width: 100px;
@@ -96,16 +96,16 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
-            @include media(1350){
+            @include media($xxl){
                 font-size: 30px;
                 line-height: 140%;
                 margin-bottom: 20px;
             }
-            @include media(992){
+            @include media($lg){
                 margin-left: 45px;
                 margin-bottom: 45px;
             }
-            @include media(576){
+            @include media($sm){
                 font-size: 20px;
                 line-height: 27px;
             }
@@ -115,11 +115,11 @@
             font-size: 27px;
             line-height: 33px;
             color: #D5D5D5;
-            @include media(1350){
+            @include media($xxl){
                 font-size: 20px;
                 line-height: 140%;
             }
-            @include media(576){
+            @include media($sm){
                 font-weight: 500;
                 font-size: 15px;
                 line-height: 18px;

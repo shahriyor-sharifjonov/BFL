@@ -5,15 +5,15 @@
     @include media(1600){
         padding-top: 63px + 130px;
     }
-    @include media(1350){
+    @include media($xxl){
         padding-top: 63px + 115px;
     }
-    @include media(576){
+    @include media($sm){
         padding-top: 63px + 84px;
     }
     &__el-1{
         display: none;
-        @include media(576){
+        @include media($sm){
             background: rgba(45, 89, 207, 0.76);
             opacity: 0.6;
             filter: blur(100px);
@@ -30,7 +30,7 @@
     }
     &__el-2{
         display: none;
-        @include media(576){
+        @include media($sm){
             display: block;
             position: absolute;
             bottom: -140px;
@@ -56,7 +56,7 @@
         display: none;
         background-image: url('../img/blow.png');
         background-repeat: no-repeat;
-        @include media(576){
+        @include media($sm){
             display: block;
         }
     }
@@ -68,7 +68,7 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
-        @include media(1200){
+        @include media($xl){
             flex-direction: column-reverse;
             padding: 30px 35px 70px 35px;
         }
@@ -97,13 +97,13 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
-        @include media(1350){
+        @include media($xxl){
             font-size: 20px;
         }
-        @include media(1200){
+        @include media($xl){
             width: 100%;
         }
-        @include media(576){
+        @include media($sm){
             font-size: 16px;
             line-height: 107.1%;
         }
@@ -113,10 +113,10 @@
         width: 50%;
         overflow: hidden;
         line-height: 0;
-        @include media(1200){
+        @include media($xl){
             width: 100%;
         }
-        @include media(768){
+        @include media($md){
             margin-left: -10px;
             margin-right: -10px;
             width: calc(100% + 20px);

@@ -1,6 +1,6 @@
 .adv{
     padding-bottom: 150px;
-    @include media(576){
+    @include media($sm){
         padding-bottom: 100px;
     }
     &__body{
@@ -20,7 +20,7 @@
         position: relative;
         isolation: isolate;
         overflow: hidden;
-        @include media(1350){
+        @include media($xxl){
             width: 100%;
         }
         &::before{
@@ -50,7 +50,7 @@
             width: 120px;
             min-width: 120px;
             height: 120px;
-            @include media(576){
+            @include media($sm){
                 min-width: 80px;
                 width: 80px;
                 height: 80px;
@@ -76,7 +76,7 @@
             font-size: 18px;
             line-height: 107.5%;
             color: #C1C1C1;    
-            @include media(576){
+            @include media($sm){
                 font-size: 11px;
                 line-height: 107.5%;
             }        

@@ -13,7 +13,7 @@
         z-index: -1;
         filter: blur(100px);
         transform: rotate(165deg);
-        @include media(576){
+        @include media($sm){
             width: 205px;
             height: 283px;
         }
@@ -30,19 +30,19 @@
         filter: blur(100px);
         transform: rotate(-154.51deg);
         z-index: -1;
-        @include media(576){
+        @include media($sm){
             bottom: 80px;
             right: -86px;
             width: 205px;
             height: 283px;
         }
     }
-    @include media(768){
+    @include media($md){
         padding: 0px 0 100px 0;
     }
     &__title{
         margin-bottom: 100px;
-        @include media(1350){
+        @include media($xxl){
             margin-bottom: 50px;
         }
     }
@@ -54,20 +54,20 @@
         @include media(1600){
             margin-bottom: 100px;
         }
-        @include media(1350){
+        @include media($xxl){
             margin-bottom: 50px;
         }
-        @include media(1200){
+        @include media($xl){
             flex-direction: column;
         }
     }
     &__img{
         width: 50%;
         line-height: 0;
-        @include media(992){
+        @include media($lg){
             width: 80%;
         }
-        @include media(768){
+        @include media($md){
             width: 100%;
         }
         img{
@@ -79,16 +79,16 @@
         background: linear-gradient(177.64deg, #0C0C0D 23.1%, #182027 96.43%);
         padding: 80px;
         position: relative;
-        @include media(1350){
+        @include media($xxl){
             padding: 50px;
         }
-        @include media(1200){
+        @include media($xl){
             width: 100%;
         }
-        @include media(992){
+        @include media($lg){
             padding-top: 20px;
         }
-        @include media(576){
+        @include media($sm){
             padding: 50px 30px;
         }
         &::before{
@@ -116,18 +116,18 @@
             @include media(1600){
                 bottom: -24px;
             }
-            @include media(1350){
+            @include media($xxl){
                 bottom: -28px;
             }
-            @include media(1200){
+            @include media($xl){
                 background-size: auto 100%;
                 bottom: -20px;
                 background-position: center;
             }
-            @include media(992){
+            @include media($lg){
                 background-size: 100% auto;
             }
-            @include media(576){
+            @include media($sm){
                 left: 20px;
                 right: 20px;
             }
@@ -139,11 +139,11 @@
         line-height: 29px;
         margin-bottom: 13px;
         color: #DDDDDD;
-        @include media(1350){
+        @include media($xxl){
             font-size: 20px;
             line-height: 120%;
         }    
-        @include media(576){
+        @include media($sm){
             text-align: center;
             font-size: 15px;
             line-height: 18px;
@@ -155,10 +155,10 @@
         align-items: flex-start;
         justify-content: flex-start;
         gap: 50px;
-        @include media(1350){
+        @include media($xxl){
             gap: 24px;
         }
-        @include media(576){
+        @include media($sm){
             gap: 40px;
         }
     }
@@ -172,11 +172,11 @@
             line-height: 96px;
             margin-bottom: 5px;
             color: #FFFFFF;    
-            @include media(1350){
+            @include media($xxl){
                 font-size: 56px;
                 line-height: 120%;
             } 
-            @include media(576){
+            @include media($sm){
                 font-size: 50px;
                 margin-bottom: 8px;
             }       
@@ -186,10 +186,10 @@
             font-size: 20px;
             line-height: 24px;
             color: #DDDDDD;  
-            @include media(1350){
+            @include media($xxl){
                 font-size: 16px;
             }       
-            @include media(576){
+            @include media($sm){
                 font-size: 12px;
                 line-height: 15px;
             }  
@@ -200,7 +200,7 @@
         margin-right: auto;
         max-width: 410px;
         width: 100%;
-        @include media(576){
+        @include media($sm){
             max-width: 270px;
             height: 50px;
         }

@@ -5,11 +5,11 @@
     @include media(1600){
         padding-top: 63px + 130px;
     }
-    @include media(1350){
+    @include media($xxl){
         padding-top: 63px + 115px;
         padding-bottom: 150px;
     }
-    @include media(576){
+    @include media($sm){
         padding-top: 63px + 84px;
         padding-bottom: 100px;
     }
@@ -17,7 +17,7 @@
         text-align: left;
         margin-bottom: 80px;    
         width: max-content;
-        @include media(1200){
+        @include media($xl){
             width: 100%;
             text-align: center;
             margin-bottom: 50px;
@@ -27,7 +27,7 @@
         display: flex;
         flex-direction: column;
         gap: 400px;
-        @include media(992){
+        @include media($lg){
             gap: 60px;
         }
     }
@@ -36,7 +36,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 40px;
-        @include media(992){
+        @include media($lg){
             flex-direction: column;
             &.right{
                 flex-direction: column-reverse;
@@ -46,15 +46,15 @@
             min-width: 527px;
             width: 50%;
             position: relative;
-            @include media(1200){
+            @include media($xl){
                 min-width: 350px;
             }
-            @include media(992){
+            @include media($lg){
                 min-width: 0;
                 max-width: 350px;
                 width: 100%;
             }
-            @include media(576){
+            @include media($sm){
                 max-width: 288px;
             }
             &.left{
@@ -62,7 +62,7 @@
                     margin-left: auto;
                     margin-right: auto;
                     width: calc(100% - 60px);
-                    @include media(992){
+                    @include media($lg){
                         width: calc(100% - 33px);
                     }
                 } 
@@ -74,12 +74,12 @@
             &-content{
                 width: calc(100% - 33px);
                 position: relative;
-                @include media(1200){
+                @include media($xl){
                     margin-left: 10px;
                     margin-right: auto;
                     width: calc(100% - 60px);
                 }
-                @include media(992){
+                @include media($lg){
                     width: calc(100% - 33px);
                 }
                 &::before{
@@ -93,7 +93,7 @@
                     height: 600px;
                     background: rgba(100, 100, 100, 0.51);
                     filter: blur(100px);
-                    @include media(1200){
+                    @include media($xl){
                         width: 300px;
                         height: 300px;
                     }
@@ -107,7 +107,7 @@
                     left: 25px;
                     border: 1px solid #7A7A7A;
                     z-index: -1;
-                    @include media(768){
+                    @include media($md){
                         right: -16px;
                         top: 23px;
                         bottom: 12px;
@@ -130,7 +130,7 @@
                 max-width: 390px;
                 text-align: center;
                 color: rgba(16, 19, 32, 0.75);
-                @include media(768){
+                @include media($md){
                     font-size: 15px;
                     line-height: 95.3%;
                     max-width: 200px;
@@ -143,10 +143,10 @@
             background: linear-gradient(179.42deg, #0C0C0D 34.88%, #182027 97.8%);
             position: relative;
             flex: 1 1 auto;
-            @include media(1350){
+            @include media($xxl){
                 padding: 40px;
             }
-            @include media(576){
+            @include media($sm){
                 padding: 25px 35px;
                 max-width: 288px;
             }
@@ -173,15 +173,15 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: auto 100%;
-                @include media(1350){
+                @include media($xxl){
                     height: 40px;
                     bottom: -13px;
                 }
-                @include media(768){
+                @include media($md){
                     height: 30px;
                     bottom: -8px;
                 }
-                @include media(576){
+                @include media($sm){
                     height: 20px;
                     bottom: -2px;
                 }
@@ -197,11 +197,11 @@
             font-size: 27px;
             line-height: 33px;
             color: #DDDDDD;
-            @include media(1350){
+            @include media($xxl){
                 font-size: 20px;
                 line-height: 140%;
             }
-            @include media(576){
+            @include media($sm){
                 font-size: 13px;
                 line-height: 16px;
             }

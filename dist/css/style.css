@@ -2888,6 +2888,10 @@ button {
     height: 877px;
   }
 
+  .intro__title {
+    font-size: 59px;
+  }
+
   .intro__content::after {
     bottom: -37px;
   }
@@ -2919,12 +2923,6 @@ button {
 
   .ask {
     padding-top: 193px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .intro__title {
-    font-size: 59px;
   }
 }
 
@@ -4077,6 +4075,14 @@ button {
     width: 82px;
   }
 
+  .footer__list {
+    gap: 6px;
+  }
+
+  .footer__link {
+    font-size: 12px;
+  }
+
   .footer__tel {
     margin-left: -40px;
   }
@@ -4494,10 +4500,9 @@ button {
   }
 }
 
-@media (max-width: 490px) {
-  .footer__list {
-    margin-left: 0;
-    margin-right: 20px;
+@media (max-width: 430px) {
+  .footer {
+    zoom: 0.85;
   }
 }
 
@@ -4507,9 +4512,10 @@ button {
   }
 }
 
-@media (max-width: 360px) {
-  .footer__tel {
-    display: none;
+@media (max-width: 340px) {
+  .footer__list {
+    margin-left: 0;
+    margin-right: 20px;
   }
 }
 

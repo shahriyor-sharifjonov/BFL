@@ -8,10 +8,10 @@
     @include media(1600){
         height: 130px;
     }
-    @include media(1350){
+    @include media($xxl){
         height: 115px;
     }
-    @include media(576){
+    @include media($sm){
         height: 84px;
     }
     &__nav{
@@ -22,7 +22,7 @@
         @include media(1600){
             padding: 30px 15px;
         }
-        @include media(576){
+        @include media($sm){
             padding: 20px 15px;
         }
     }
@@ -30,13 +30,13 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
-        @include media(1350){
+        @include media($xxl){
             display: none;
         }
     }
     &__logo{
         line-height: 0;
-        @include media(576){
+        @include media($sm){
             width: 82px;
         }
         svg{
@@ -49,7 +49,7 @@
     &__button{
         display: none;
         cursor: pointer;
-        @include media(1350){
+        @include media($xxl){
             display: block;
         }
     }
@@ -65,7 +65,7 @@
         @include media(1600){
             gap: 40px;
         }
-        @include media(1350){
+        @include media($xxl){
             display: none;
         }
     }
@@ -102,7 +102,7 @@
     &__btn{
         height: 70px;
         margin-right: 48px;
-        @include media(1350){
+        @include media($xxl){
             display: none;
         }
     }
@@ -110,7 +110,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        @include media(1350){
+        @include media($xxl){
             gap: 16px;
         }
     }
@@ -121,11 +121,11 @@
         justify-content: flex-end;
         &.xxl{
             display: none;
-            @include media(1350){
+            @include media($xxl){
                 display: flex;
             }
         }
-        @include media(1350){
+        @include media($xxl){
             display: none;
         }
         &-link{
@@ -139,10 +139,10 @@
             @include media(1600){
                 font-size: 24px; 
             }
-            @include media(1350){
+            @include media($xxl){
                 font-size: 20px;
             }
-            @include media(576){
+            @include media($sm){
                 font-size: 14px;
             }
             &:hover{
@@ -160,10 +160,10 @@
                 font-size: 14px;
                 padding-left: 18px;
             }
-            @include media(1350){
+            @include media($xxl){
                 font-size: 11px;
             }
-            @include media(576){
+            @include media($sm){
                 font-size: 8px;
             }
             &::before{
@@ -210,7 +210,7 @@
             border: 1px solid;
             border-image-slice: 1;
             border-image-source: linear-gradient(180deg, rgba(83, 83, 83, 0) 31.16%, #535353 100%);
-            @include media(576){
+            @include media($sm){
                 
             }
         }
@@ -231,7 +231,7 @@
             background-clip: text;
             text-fill-color: transparent;
             margin-bottom: 27px;
-            @include media(576){
+            @include media($sm){
                 font-size: 20px;
             }
         }
@@ -253,7 +253,7 @@
             justify-content: flex-start;
             gap: 7px;
             transition: 300ms ease-out;
-            @include media(576){
+            @include media($sm){
                 font-size: 17px;
             }
             &:hover{
@@ -276,7 +276,7 @@
         right: 16px;
         width: 50px;
         height: 50px;
-        @include media(576){
+        @include media($sm){
             width: 26px;
             height: 26px;
         }
