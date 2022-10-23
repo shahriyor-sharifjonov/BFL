@@ -5,7 +5,7 @@
     @include media(1600){
         padding-top: 63px + 130px;
     }
-    @include media(1400){
+    @include media(1350){
         padding-top: 63px + 115px;
         padding-bottom: 80px;
     }
@@ -31,7 +31,7 @@
         @include media(1600){
             height: 700px + 177px;
         }
-        @include media(1400){
+        @include media(1350){
             height: 600px + 80px;
         }
         @include media(992){
@@ -61,7 +61,7 @@
         background-clip: text;
         text-fill-color: transparent;
         text-shadow: 6px 6px 51px rgba(0, 0, 0, 0.3);
-        @include media(1400){
+        @include media(1350){
             font-size: 50px;
             line-height: 140%;
         }
@@ -91,7 +91,7 @@
         padding: 52px;
         position: relative;
         isolation: isolate;
-        @include media(1400){
+        @include media(1350){
             height: 600px;
         }
         @include media(992){
@@ -163,7 +163,7 @@
         background-clip: text;
         text-fill-color: transparent;
         margin-bottom: 23px;
-        @include media(1400){
+        @include media(1350){
             font-size: 56px;
         }
         @include media(1200){
@@ -187,7 +187,7 @@
         margin-bottom: 97px;
         text-align: center;
         color: #ABABAB;   
-        @include media(1400){
+        @include media(1350){
             margin-bottom: 55px;
         }     
         @include media(1200){

@@ -5,7 +5,7 @@
     @include media(1600){
         padding-top: 63px + 130px;
     }
-    @include media(1400){
+    @include media(1350){
         padding-top: 63px + 115px;
     }
     @include media(576){
@@ -97,7 +97,7 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
-        @include media(1400){
+        @include media(1350){
             font-size: 20px;
         }
         @include media(1200){

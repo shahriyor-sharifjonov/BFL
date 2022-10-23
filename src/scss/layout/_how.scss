@@ -192,7 +192,7 @@
             isolation: isolate;
             overflow: hidden;
             margin-bottom: 36px;
-            @include media(1400){
+            @include media(1350){
                 margin-bottom: 24px;
             }
             &::before{
@@ -224,7 +224,7 @@
             font-size: 25px;
             line-height: 31px;
             color: #D1D1D1;  
-            @include media(1400){
+            @include media(1350){
                 font-size: 20px;
             }          
             @include media(576){
@@ -263,7 +263,7 @@
             span{
                 color: #fff;
             }
-            @include media(1400){
+            @include media(1350){
                 font-size: 20px;
             }       
             @include media(576){

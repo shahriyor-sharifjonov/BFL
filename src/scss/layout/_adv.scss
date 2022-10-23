@@ -20,7 +20,7 @@
         position: relative;
         isolation: isolate;
         overflow: hidden;
-        @include media(1400){
+        @include media(1350){
             width: 100%;
         }
         &::before{

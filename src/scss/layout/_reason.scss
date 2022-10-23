@@ -97,25 +97,25 @@
             .reason__item{
                 &:nth-of-type(1){
                     margin-right: 42px;
-                    @include media(1400){
+                    @include media(1350){
                         margin-right: 0;
                     }
                 }
                 &:nth-of-type(2){
                     margin-right: 118px;
-                    @include media(1400){
+                    @include media(1350){
                         margin-right: 0;
                     }
                 }
                 &:nth-of-type(3){
                     margin-right: 42px;
-                    @include media(1400){
+                    @include media(1350){
                         margin-right: 0;
                     }
                 }
                 &:nth-of-type(4){
                     margin-right: -31px;
-                    @include media(1400){
+                    @include media(1350){
                         margin-right: 0;
                     }
                 }
@@ -126,25 +126,25 @@
             .reason__item{
                 &:nth-of-type(1){
                     margin-left: 12px;
-                    @include media(1400){
+                    @include media(1350){
                         margin-left: 0;
                     }
                 }
                 &:nth-of-type(2){
                     margin-left: 82px;
-                    @include media(1400){
+                    @include media(1350){
                         margin-left: 0;
                     }
                 }
                 &:nth-of-type(3){
                     margin-left: 12px;
-                    @include media(1400){
+                    @include media(1350){
                         margin-left: 0;
                     }
                 }
                 &:nth-of-type(4){
                     margin-left: -60px;
-                    @include media(1400){
+                    @include media(1350){
                         margin-left: 0;
                     }
                 }
@@ -217,7 +217,7 @@
         color: #C1C1C1;
         max-width: 308px;
         width: 100%;
-        @include media(1400){
+        @include media(1350){
             font-size: 20px;
         }
         @include media(768){
@@ -244,7 +244,7 @@
     &__img{
         position: relative;
         isolation: isolate;
-        @include media(1400){
+        @include media(1350){
             max-width: 500px;
             width: 100%;
         }

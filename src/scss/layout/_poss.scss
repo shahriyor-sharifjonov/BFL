@@ -37,7 +37,7 @@
         filter: blur(100px);
         transform: rotate(-154.51deg);
         z-index: -1;
-        @include media(1400){
+        @include media(1350){
             width: 200px;
             height: 280px;
         }

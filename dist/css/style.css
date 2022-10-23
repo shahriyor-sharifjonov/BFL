@@ -2813,7 +2813,7 @@ button {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1350px) {
   .container {
     max-width: 1320px;
   }
@@ -2922,7 +2922,7 @@ button {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1350px) {
   .title {
     font-size: 42px;
   }

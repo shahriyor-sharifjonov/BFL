@@ -2,7 +2,7 @@
     padding-top: 150px;
     padding-bottom: 150px;
     background: url(../img/solution-img.png)bottom / contain no-repeat;
-    @include media(1400){
+    @include media(1350){
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -55,7 +55,7 @@
         column-gap: 94px;
         row-gap: 64px;
         margin-bottom: 22px;
-        @include media(1400){
+        @include media(1350){
             column-gap: 40px;
             row-gap: 40px;
         }
@@ -76,7 +76,7 @@
         isolation: isolate;
         display: flex;
         column-gap: 33px;
-        @include media(1400){
+        @include media(1350){
             width: calc(50% - 20px);
             padding: 12px 25px 25px 25px;
             column-gap: 15px;
@@ -122,7 +122,7 @@
         line-height: 100%;
         position: relative;
         padding-top: 14px;
-        @include media(1400){
+        @include media(1350){
             font-size: 50px;
         }
         @include media(768){
@@ -145,7 +145,7 @@
     }
     &__texts{
         padding-top: 54px;
-        @include media(1400){
+        @include media(1350){
             padding-top: 16px;
         }
         @include media(992){
@@ -157,7 +157,7 @@
         font-size: 27px;
         line-height: 100%;
         margin-bottom: 25px;
-        @include media(1400){
+        @include media(1350){
             font-size: 20px;
             margin-bottom: 10px;
         }
@@ -186,7 +186,7 @@
         color: #9A9A9A;
         max-width: 444px;
         width: 100%;
-        @include media(1400){
+        @include media(1350){
             font-size: 16px;
         }
         @include media(768){

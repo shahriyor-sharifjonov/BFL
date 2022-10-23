@@ -6,7 +6,7 @@
         padding-top: 63px + 130px;
         padding-bottom: 320px;
     }
-    @include media(1400){
+    @include media(1350){
         padding-top: 63px + 115px;
         padding-bottom: 100px;
     }
@@ -16,7 +16,7 @@
     }
     &__title{
         margin-bottom: 120px;
-        @include media(1400){
+        @include media(1350){
             margin-bottom: 80px;
         }
         @include media(1200){
@@ -127,7 +127,7 @@
             transform: translateY(-50%);
             bottom: 18px;
             right: 0;
-            @include media(1400){
+            @include media(1350){
                 max-width: 100%;
                 height: 550px;
             }
@@ -139,7 +139,7 @@
     }
     &__img{
         line-height: 0;
-        @include media(1400){
+        @include media(1350){
             max-width: 400px;
             width: 100%;
             min-width: 400px;
@@ -153,7 +153,7 @@
             max-width: 300px !important;
         }
         img{
-            @include media(1400){
+            @include media(1350){
                 width: 100%;
             }
         }
@@ -166,7 +166,7 @@
         max-width: 650px;
         width: 100%;
         margin-bottom: 30px;  
-        @include media(1400){
+        @include media(1350){
             font-size: 25px;
         }    
         @include media(768){
@@ -221,7 +221,7 @@
             font-size: 22px;
             line-height: 110%;
             color: #DDDDDD;
-            @include media(1400){
+            @include media(1350){
                 font-size: 19px;
             }
             @include media(575){
@@ -276,13 +276,13 @@
         }
         &.disable-xxl{
             display: flex;
-            @include media(1400){
+            @include media(1350){
                 display: none;
             }
         }
         &.enable-xxl{
             display: none;
-            @include media(1400){
+            @include media(1350){
                 display: flex;
             }
         }
@@ -290,20 +290,20 @@
     &__row{
         display: flex;
         column-gap: 20px;
-        @include media(1400){
+        @include media(1350){
             flex-direction: column;
         }
     }
     &__wrapper{
         width: 50%;
-        @include media(1400){
+        @include media(1350){
             width: 100%;
         }
         &:nth-of-type(1){
             .services__item{
                 &:last-of-type{
                     margin-bottom: 35px;
-                    @include media(1400){
+                    @include media(1350){
                         margin-bottom: 8px;
                     }
                 }

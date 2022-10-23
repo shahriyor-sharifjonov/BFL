@@ -5,7 +5,7 @@
     @include media(1600){
         padding-top: 63px + 130px;
     }
-    @include media(1400){
+    @include media(1350){
         padding-top: 63px + 115px;
         padding-bottom: 80px;
     }
@@ -74,7 +74,7 @@
                 filter: blur(25px);
                 transform: rotate(165deg) translate(50%, 50%);
             }
-            @include media(1400){
+            @include media(1350){
                 width: 100px;
                 height: 100px;
                 min-width: 100px;
@@ -96,7 +96,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
-            @include media(1400){
+            @include media(1350){
                 font-size: 30px;
                 line-height: 140%;
                 margin-bottom: 20px;
@@ -115,7 +115,7 @@
             font-size: 27px;
             line-height: 33px;
             color: #D5D5D5;
-            @include media(1400){
+            @include media(1350){
                 font-size: 20px;
                 line-height: 140%;
             }
