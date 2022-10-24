@@ -64,3 +64,17 @@ popupOpen.forEach(open => {
         popup.classList.add('active')
     })
 })
+
+if(document.querySelector('.acq__item')){
+    const item = document.querySelectorAll('.acq__item');
+    item.forEach(el => {
+        let open = false;
+        const hide = el.querySelector('.hide');
+        const btn = el.querySelector('.more');
+        btn.addEventListener('click', () => {
+            hide.classList.toggle('show');
+            open = !open;
+            open ? btn.innerHTML = "показать меньше" : btn.innerHTML = "читать еще"
+        })
+    })
+}
